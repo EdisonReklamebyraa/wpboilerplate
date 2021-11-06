@@ -1,7 +1,7 @@
 const path = require('path');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('css-minimizer-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
@@ -23,7 +23,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: "css/style.[hash].css",
+      filename: "css/style.[contenthash].css",
       ignoreOrder: false,
     }),
     new OptimizeCSSAssetsPlugin({}),
@@ -38,7 +38,7 @@ module.exports = {
   ],
   entry: ['./assets/javascript/scripts.js', './assets/scss/style.scss'],
   output: {
-    filename: 'js/bundle.[hash].js',
+    filename: 'js/bundle.[contenthash].js',
     path: path.resolve('dist/')
   },
   module: {
@@ -60,7 +60,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: "babel-loader"
+        use: "babel-loader-wepack-5"
       }
     ]
   },

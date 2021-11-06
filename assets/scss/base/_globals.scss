@@ -1,0 +1,52 @@
+@use './breakpoints' as *;
+
+/* Use this class for screen reader text */
+.screenReader {
+  border: 0;
+  clip-path: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Push bottom to footer */
+html {
+  height: 100%;
+  position: relative;
+  padding-bottom: 56px // Height of footer
+}
+
+.responsive-embed {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 56.25%;
+}
+
+.responsive-embed iframe,
+.responsive-embed object,
+.responsive-embed embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Default container class
+.container {
+  &__outer {
+    max-width: var(--container);
+    margin: 0 auto;
+  }
+  &__inner {
+    padding: 0 1rem;
+    @media(min-width: $small) {
+      padding: 0;
+    }
+  }
+}

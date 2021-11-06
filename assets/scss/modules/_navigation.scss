@@ -1,3 +1,5 @@
+@use '../base' as *;
+
 .hamburger {
   display: block;
   background-color: transparent;
@@ -71,7 +73,7 @@
   }
 }
 
-@media (min-width:992px) {
+@media (min-width:$large) {
   .hamburger {
     display: none;
   }
