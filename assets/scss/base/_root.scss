@@ -7,9 +7,29 @@
     @media(min-width: $xlarge) {--container: 1140px;}
     @media(min-width: $xxlarge) {--container: 1320px;}
 
+    /* Font Families */
+    --ff-body: "Arial", sans-serif;
+    --ff-heading: "Times New Roman", serif;
+
     /* Font sizes */
-    --fs-100: .5rem;
+    --fs-100: .512rem;
+    --fs-200: .64rem;
+    --fs-300: .8rem;
     --fs-400: 1rem;
-    --fs-600: 2rem;
-    --fs-900: 5rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.563rem;
+    --fs-700: 1.953rem;
+    --fs-800: 2.441rem;
+    --fs-900: 3.052rem;
+
+    /* Font weights */
+    --fw-thin: 100;
+    --fw-extra-light: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+    --fw-black: 900;
   }

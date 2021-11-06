@@ -2,11 +2,11 @@
 
 {% block content %}
 <div class="container">
-  <div class="row">
-    <div class="col-12 col-lg-8">
-      <h1>This is Index.twig</h1>
-      {{ post.title }}
-      {{ post.content }}
+  <div class="container__outer">
+    <div class="container__inner">
+      <p class="subheading">Template: views/pages/index.twig</p>
+      <h1 class="heading">{{ post.title }}</h1>
+      <div>{{ post.content }}</div>
     </div>
   </div>
 </div>

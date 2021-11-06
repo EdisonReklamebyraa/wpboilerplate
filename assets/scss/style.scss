@@ -1,10 +1,9 @@
  @use './base' as *;
 
- /* Modules */
- @use 'modules/header';
- @use 'modules/navigation';
- @use 'modules/footer';
- @use 'modules/searchForm';
+ @use 'layout/header';
+ @use 'layout/navigation';
+ @use 'layout/footer';
 
-/* Pages */
-@use 'pages/searchResults';
+ /* Modules */
+ @use 'modules/searchForm';
+ @use 'modules/searchResults';

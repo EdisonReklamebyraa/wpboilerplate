@@ -1,17 +1,21 @@
-<header class="topHeader">
-  <section class="logo">
-    <a href="{{ site.link }}" aria-label="forside"><img src="{{ site_logo }}" width="100"></a>
-  </section>
+<header class="container topHeader">
+  <div class="container__outer">
+    <div class="container__inner">
+      <section class="logo">
+        <a href="{{ site.link }}" aria-label="forside"><img src="{{ site_logo }}" width="100"></a>
+      </section>
 
-  <nav class="navigation">
-    {% include 'partials/nav.twig' %}
+      <nav class="navigation">
+        {% include 'partials/nav.twig' %}
 
-    <button class="hamburger" id="hamburger">
-      <span class="hamburger__line"></span>
-      <span class="hamburger__line"></span>
-      <span class="hamburger__line"></span>
-      <span class="screenReader">Menu</span>
-    </button>
+        <button class="hamburger" id="hamburger">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="screenReader">Menu</span>
+        </button>
 
-  </nav>
+      </nav>
+    </div>
+  </div>
 </header>

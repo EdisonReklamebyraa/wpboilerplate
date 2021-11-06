@@ -1,0 +1,14 @@
+body {
+  font-family: var(--ff-body);
+}
+
+.heading {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-bold);
+  font-family: var(--ff-heading);
+}
+
+.subheading {
+  font-size: var(--fs-200);
+  font-style: italic;
+}
