@@ -1,3 +1,5 @@
+@use '../base' as *;
+
 .search {
   order: -1;
   &__input {
